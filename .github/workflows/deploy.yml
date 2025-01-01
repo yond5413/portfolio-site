@@ -27,20 +27,25 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd my-app
+          npm install
 
       - name: Build
         run: |
+          cd my-app
           npm run build
           npm run export
 
       - name: Fix 404 for GitHub Pages
-        run: cp out/index.html out/404.html
+        run: |
+          cd my-app/out
+          cp index.html 404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./out
+          path: ./my-app/out
 
   deploy:
     environment:
