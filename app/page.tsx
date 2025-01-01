@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react'
 import EmailDialog from './components/EmailDialog'
 import DownloadResume from './components/DownloadResume'
 
+
 export default function Home() {
   const projects = [
     {
