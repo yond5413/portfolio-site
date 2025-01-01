@@ -20,31 +20,29 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          cd my-app
-          npm install
+        run: npm install
 
       - name: Build
         run: |
-          cd my-app
           npm run build
           npm run export
 
       - name: Fix 404 for GitHub Pages
         run: |
-          cp my-app/out/index.html my-app/out/404.html
+          cd out
+          cp index.html 404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: my-app/out
+          path: ./out
 
   deploy:
     environment:
