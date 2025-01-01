@@ -221,8 +221,8 @@ exports.getNonce = function () {
 
 // Exports
 module.exports = {
-	"style": {"fontFamily":"'__Inter_b2e018', '__Inter_Fallback_b2e018'","fontStyle":"normal"},
-	"className": "__className_b2e018"
+	"style": {"fontFamily":"'__Inter_d65c78', '__Inter_Fallback_d65c78'","fontStyle":"normal"},
+	"className": "__className_d65c78"
 };
 
 
@@ -244,7 +244,7 @@ Object.defineProperty(exports, "addBasePath", ({
 }));
 const _addpathprefix = __webpack_require__(893);
 const _normalizetrailingslash = __webpack_require__(1094);
-const basePath = "/portfolio-site" || 0;
+const basePath =  false || "";
 function addBasePath(path, required) {
     return (0, _normalizetrailingslash.normalizePathTrailingSlash)( false ? 0 : (0, _addpathprefix.addPathPrefix)(path, basePath));
 }
@@ -4817,7 +4817,7 @@ Object.defineProperty(exports, "getDomainLocale", ({
     }
 }));
 const _normalizetrailingslash = __webpack_require__(1094);
-const basePath = (/* unused pure expression or super */ null && ("/portfolio-site" || 0));
+const basePath = (/* unused pure expression or super */ null && ( false || ""));
 function getDomainLocale(path, locale, locales, domainLocales) {
     if (false) {} else {
         return false;
@@ -4860,7 +4860,7 @@ const _warnonce = __webpack_require__(8658);
 const _routercontext = __webpack_require__(7160);
 const _imageloader = /*#__PURE__*/ _interop_require_default._(__webpack_require__(5246));
 // This is replaced by webpack define plugin
-const configEnv = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/portfolio-site/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":true};
+const configEnv = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":true};
 if (true) {
     globalThis.__NEXT_IMAGE_IMPORTED = true;
 }
@@ -8430,7 +8430,7 @@ const unstable_getImgProps = (imgProps)=>{
     const { props } = (0, _getimgprops.getImgProps)(imgProps, {
         defaultLoader: _imageloader.default,
         // This is replaced by webpack define plugin
-        imgConf: {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/portfolio-site/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":true}
+        imgConf: {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":true}
     });
     for (const [key, value] of Object.entries(props)){
         if (value === undefined) {
