@@ -1,10 +1,9 @@
 import Image from 'next/image'
-import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+import { Button } from "../components/ui/button"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../components/ui/card"
 import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react'
 import EmailDialog from './components/EmailDialog'
 import DownloadResume from './components/DownloadResume'
-
 
 export default function Home() {
   const projects = [
@@ -29,7 +28,7 @@ export default function Home() {
         "Collaborated with team to analyze and process large datasets of website characteristics",
         "Created comprehensive documentation and analysis in Jupyter notebooks"
       ],
-      github: "https://github.com/larakaracasu/Phishing-Websites"
+      github: "https://github.com/yond5413/Phishing-Websites"
     },
     {
       title: "Smart Photo Album",

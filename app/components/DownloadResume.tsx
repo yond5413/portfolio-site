@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from "@/components/ui/button"
+import { Button } from "../../components/ui/button"
 import { Download } from 'lucide-react'
 
 export default function DownloadResume() {
@@ -11,7 +11,7 @@ export default function DownloadResume() {
     // Create a link element
     const link = document.createElement('a')
     link.href = pdfUrl
-    link.download = 'YonathanDaniel_Resume.pdf'
+    link.download = 'Yonathan_Daniel_Resume.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
