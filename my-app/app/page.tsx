@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react'
+import { Github, Linkedin} from 'lucide-react'
 import EmailDialog from '../components/EmailDialog'
 import DownloadResume from '../components/DownloadResume'
 
