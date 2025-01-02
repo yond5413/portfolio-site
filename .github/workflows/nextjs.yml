@@ -20,15 +20,21 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        # Use 'install' instead of 'ci' since there's no lock file
+        working-directory: ./my-app
         run: npm install
 
       - name: Build
-        run: npm run build
+        working-directory: ./my-app
+        run: |
+          npm run build
+          npm run export
+
+      - name: Fix 404 for GitHub Pages
+        working-directory: ./my-app/out
+        run: cp index.html 404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: out
+          folder: my-app/out
           branch: gh-pages
-
