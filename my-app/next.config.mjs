@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
   },
-  basePath: '/portfolio-site', 
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH, 
 };
 
 export default nextConfig;
