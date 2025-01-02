@@ -20,18 +20,20 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        working-directory: ./my-app
-        run: npm install
+        run: |
+          cd my-app
+          npm install
 
       - name: Build
-        working-directory: ./my-app
         run: |
+          cd my-app
           npm run build
           npm run export
 
       - name: Fix 404 for GitHub Pages
-        working-directory: ./my-app/out
-        run: cp index.html 404.html
+        run: |
+          cd my-app/out
+          cp index.html 404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
