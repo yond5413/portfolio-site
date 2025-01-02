@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 'lts/*'
           cache: 'npm'
+          cache-dependency-path: './my-app/package-lock.json'
 
       - name: Install dependencies
         run: |
