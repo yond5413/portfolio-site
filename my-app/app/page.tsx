@@ -53,17 +53,6 @@ export default function Home() {
       ],
       github: "https://github.com/yond5413/ecommerce-shop"
     },
-    {
-      title: "AMADS: Autonomous Mapping and Adversarial Detection System",
-      description: "Robot simulation for autonomous mapping and object detection",
-      technologies: ["ROS", "Gazebo", "Python"],
-      details: [
-        "Led development of maze design in the simulation",
-        "Researched ROS Gazebo mechanics for realistic environment simulation",
-        "Enhanced autonomous capabilities for rescue and reconnaissance missions"
-      ],
-      github: "https://sites.psu.edu/lfshowcasesp21/2021/04/29/amads-autonomous-mapping-and-adversarial-detection/"
-    },
      {
       title: "DDP-Resnet18: Distributed Training of ResNet-18",
       description: "Implementation of Distributed Data Parallel (DDP) for training ResNet-18 on CIFAR-10 using PyTorch",
@@ -96,7 +85,7 @@ export default function Home() {
             Hi, I'm Yonathan Daniel
           </h1>
           <p className="text-2xl mb-8 text-center max-w-2xl text-white">
-            Engineering Solutions, One Line of Code at a Time
+            Engineering at the Intersection of Data, Design, and Impact
           </p>
         </section>
 
